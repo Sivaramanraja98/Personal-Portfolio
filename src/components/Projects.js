@@ -5,6 +5,7 @@ import { projects } from '../components/Assets/ProjectList';
 const Project = () => {
   return (
     <div class="container-fluid">
+    <div className='header text-center'>Projects</div>
   <div class="row">
     {
       projects.map((project) => (
