@@ -4,28 +4,51 @@ import { projects } from '../components/Assets/ProjectList';
 
 const Project = () => {
   return (
-    <div class="container-fluid">
-    <div className='header text-center'>Projects</div>
-  <div class="row">
-    {
-      projects.map((project) => (
-        <div class="col-md-4">
-          <div class="Skill">
-            <h2 class="SkillTitle">{project.name}</h2>
-            <img src={project.img} alt="screenshot" class="img-fluid" />
-            <div class="SkillList d-flex justify-content-center flex-column mb-3">
-              <p class="Desc">{project.description}</p>
-              <a href={project.applink} class="btn btn-primary w-100" target="_blank" rel="noreferrer">View App</a>
-              <a href={project.frontendcode} class="btn btn-primary w-100" target="_blank" rel="noreferrer">Front-end Source Code</a>
-              <a href={project.backendcode} class="btn btn-primary w-100" target="_blank" rel="noreferrer">Back-end Source Code</a>
-            </div>
-          </div>
+<div className='p-5 bg-light' id="project">
+    <div className='Container border'>
+      <div className='Wrapper'>
+        <div className='Title'>Projects</div>
+        <div className='SkillsContainer'>
+          {
+            projects.map((project)=>(
+              
+              <div className='Skill'>
+              <h2 className='SkillTitle'>{project.name}</h2>
+              <img src={project.img} 
+                alt='screenshot' 
+                style={{width:"100%",height:"200px"}}
+              />
+              <div className='SkillList justify-content-center'>
+                <p className='Desc'>{project.description}</p>
+                <a style={{width:"90%"}}
+                  href={project.applink} 
+                  className='link' 
+                  target='_blank' 
+                  rel="noreferrer" >
+                    View App
+                </a>
+                <a style={{width:"90%"}}
+                  href={project.frontendcode} 
+                  className='link'
+                  target='_blank'
+                  rel="noreferrer" >
+                    Front-end Source Code
+                </a>
+                <a style={{width:"90%"}}
+                  href={project.backendcode}  
+                  className='link' 
+                  target='_blank' 
+                  rel="noreferrer" >
+                    Back-end Source Code
+                </a>
+              </div>
+                </div>
+            ))
+          }
         </div>
-      ))
-    }
-  </div>
-</div>
-
+      </div>
+    </div>
+    </div>
   )
 }
 
