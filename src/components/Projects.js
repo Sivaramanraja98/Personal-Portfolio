@@ -26,7 +26,7 @@ const Project = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    View App
+                    Live
                   </a>
                   <a
                     style={{ width: "90%" }}
@@ -35,7 +35,7 @@ const Project = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Front-end Source Code
+                    Front-end Code
                   </a>
                   <a
                     style={{ width: "90%" }}
@@ -44,7 +44,7 @@ const Project = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Back-end Source Code
+                    Back-end Code
                   </a>
                 </div>
               </div>
