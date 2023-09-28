@@ -8,10 +8,10 @@ import { Col,Button,Row } from 'react-bootstrap';
 
 const Contact = () => {
   return (
-    <div className='p-5 bg-light' id="contact">
+    <div className='p-5' id="contact">
     <div className='Container border' >
         <div className='Title'>Contact Me</div>
-        <Row className='justify-content-center g-20'>
+        <Row className='justify-content-center flex d-flex g-20'>
           <Col>  
             <a href='https://github.com/Sivaramanraja98' target='_blank'rel="noreferrer" >
             <Button className='btn btn-primary gitbtn'><AiFillGithub size={30}/></Button>

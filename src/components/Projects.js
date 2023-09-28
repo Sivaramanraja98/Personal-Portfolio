@@ -13,6 +13,56 @@ const Projects = () => {
   };
 
   return (
+<<<<<<< HEAD
+    <div className='p-5' id="project">
+    <div className='Container border'>
+      <div className='Wrapper'>
+        <div className='Title'>Projects</div>
+        <div className='SkillsContainer'>
+          {
+            projects.map((project)=>(
+              
+              <div className='Skill' key={project.id}>
+              <h2 className='SkillTitle'>{project.name}</h2>
+              <img src={project.img} 
+                alt='screenshot' 
+                style={{width:"100%",height:"200px"}}
+              />
+              <div className='SkillList justify-content-center'>
+                <p className='Desc'>{project.description}</p>
+                <div>
+                  <a style={{width:"90%"}}
+                  href={project.applink} 
+                  className='link' 
+                  target='_blank' 
+                  rel="noreferrer" >
+                    Live Demo
+                </a>
+                <a style={{width:"90%"}}
+                  href={project.frontendcode} 
+                  className='link'
+                  target='_blank'
+                  rel="noreferrer" >
+                    Front-end Code
+                </a>
+                <a style={{width:"90%"}}
+                  href={project.backendcode}  
+                  className='link' 
+                  target='_blank' 
+                  rel="noreferrer" >
+                    Back-end Code
+                </a></div>
+              </div>
+                </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+    </div>
+  )
+}
+=======
     <Container fluid>
       <Row>
         {projects.map((project, index) => (
@@ -49,6 +99,7 @@ const Projects = () => {
     </Container>
   );
 };
+>>>>>>> 05049903c3d8ad6e30efe053cb416e7bdfa838bd
 
 export default Projects;
     

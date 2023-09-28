@@ -4,7 +4,7 @@ import { skills } from '../components/Assets/SkillList';
 
 const Skills = () => {
   return (
-    <div className='p-5 bg-light' id="skills">
+    <div className='p-5' id="skills">
     <div className='Container border'>
       <div className='Wrapper'>
         <div className='Title'>Skills</div>

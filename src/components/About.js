@@ -5,7 +5,7 @@ import {AiFillGithub} from 'react-icons/ai';
 
 const About = () => {
   return (
-    <div className='p-5 mar bg-light' id="about">
+    <div className='p-5 mar' id="about">
       <Container className='border'>
         <Row className="justify-content-center">
           <Col md={8}>
