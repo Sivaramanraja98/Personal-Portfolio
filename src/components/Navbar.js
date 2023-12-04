@@ -6,12 +6,15 @@ const Navibar = () => {
   return (
     <Navbar expand="lg" className="fixed-top nav" style={{ backgroundColor: "black" }}>
       <Container>
-        <Navbar.Brand className="header" href="#about">
+        <Navbar.Brand className="header" href="#home">
           MERN STACK DEVELOPER
         </Navbar.Brand>
         <Navbar.Toggle className="toggler" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto left">
+            <Nav.Link href="#home">
+              <b className="nank">Home</b>
+            </Nav.Link>
             <Nav.Link href="#about">
               <b className="nank">About</b>
             </Nav.Link>

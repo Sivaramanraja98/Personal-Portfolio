@@ -1,37 +1,15 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
-import Typewriter from "typewriter-effect";
-import { AiFillGithub } from "react-icons/ai";
+import { Container, Row, Col } from "react-bootstrap";
 
 const About = () => {
   return (
-    <div className="p-5 mar" id="about">
+    <div className="p-5" id="about">
       <Container className="borde1 align-items-center">
+        <div className="Title">About Me</div>
         <Row className="justify-content-center">
-          <Col md={8}>
-            <h4 className="display-4 nametext"> Hi there I'm</h4>
-            <h1 className="display-4 nametext">SIVARAMAN RAJA</h1>
-            <p className="lead">
-              {" "}
-              I'm a
-              <h2>
-                <Typewriter
-                  options={{
-                    strings: [
-                      "Full Stack Developer",
-                      "Frontend Developer",
-                      "Backend Developer",
-                      "Web Developer",
-                      "Software Developer",
-                    ],
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />{" "}
-              </h2>
-            </p>
+          <Col md={10}>
             <p className="cont">
-              As a fresh and enthusiastic MERN Stack Developer, I bring a
+              I am a fresh and enthusiastic MERN Stack Developer, I bring a
               combination of self-driven learning, a positive mindset, and a
               quick learner's attitude to every project I tackle. My journey in
               web development has been marked by a strong determination to
@@ -45,27 +23,18 @@ const About = () => {
             </p>
           </Col>
         </Row>
-        <Row className="justify-content-center">
-          <Col md={3}>
-            <a
-              className="btn btn-primary"
-              href="https://drive.google.com/file/d/1GA57t-uekHiO-78YdTFtF-uTW3zJdLsy/view?usp=drive_link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              My Resume
-            </a>
-          </Col>
-          <Col md={3}>
-            <a
-              href="https://github.com/Sivaramanraja98"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Button className="btn btn-primary gitbtn">
-                <AiFillGithub size={25} /> Github
-              </Button>
-            </a>
+        <Row
+          className="justify-content-centerg-20"
+          style={{ margin: "15px", fontSize: "20px" }}
+        >
+          <Col style={{ textAlign: "center", color: "cornsilk" }}>
+            <ul style={{listStyle:'none'}}>
+              <li>DOB : 02nd Febraury 1998</li>
+              <li>Education : B.Tech - Mechanical Engineering</li>
+              <li>College : Karunya Institute of Technology And Sciences, CBE </li>
+              <li>Batch : 2015 - 2019</li>
+              <li>Location : Tenkai, Tamilnadu</li>
+            </ul>
           </Col>
         </Row>
       </Container>

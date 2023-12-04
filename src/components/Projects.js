@@ -10,46 +10,43 @@ const Project = () => {
           <div className="Title">Projects</div>
           <div className="SkillsContainer">
             {projects.map((project) => (
-              <div className="Skill">
+              <div className="Skill justify-content-center">
                 <h2 className="SkillTitle">{project.name}</h2>
                 <img
                   src={project.img}
                   alt="screenshot"
                   style={{ width: "100%", height: "200px" }}
                 />
-                <div className="SkillList justify-content-center">
+                <details className="SkillList justify-content-center">
+                  <summary className="Click">
+                    Click here for Description
+                  </summary>
                   <p className="desc">{project.description}</p>
-                  <div>
-                    <h6>Demo credentials</h6>
-                    <p>username:</p>
-                    <p>password:</p>
-                  </div>
+                </details>
+                <div className ="butn-cont">
                   <a
-                    style={{ width: "90%" }}
                     href={project.applink}
-                    className="link"
+                    className="butn"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Live
+                    Demo
                   </a>
                   <a
-                    style={{ width: "90%" }}
                     href={project.frontendcode}
-                    className="link"
+                    className="butn"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Front-end Code
+                    FE Code
                   </a>
                   <a
-                    style={{ width: "90%" }}
                     href={project.backendcode}
-                    className="link"
+                    className="butn"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Back-end Code
+                    BE Code
                   </a>
                 </div>
               </div>

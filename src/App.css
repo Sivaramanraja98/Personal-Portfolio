@@ -2,9 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dancing+Script:wght@700&family=Outfit:wght@600;700;800&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap");
 
+.mar{
+  padding-top: 50px;
+}
 .borde1 {
   border: 2px solid white;
-  border-radius: 120px 12px ;
+  border-radius: 100px ;
 }
 
 .header {
@@ -15,6 +18,9 @@
   text-wrap: wrap;
   color: wheat;
 }
+.header:hover{
+  color: bisque;
+}
 
 .left {
   text-align: center;
@@ -24,6 +30,12 @@
   align-items: end;
 }
 .nametext {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 3px;
+  margin-top: 40px;
+  color: blanchedalmond;
+}
+.nametext1 {
   font-family: "Rubik", sans-serif;
   letter-spacing: 3px;
   margin-top: 10px;
@@ -78,4 +90,7 @@
   text-decoration:underline;
   text-decoration-color: gold;
   text-decoration-thickness: 5px;
+}
+.marb{
+  margin-bottom: 20px;
 }
