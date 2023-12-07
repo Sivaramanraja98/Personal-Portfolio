@@ -11,7 +11,7 @@ export let projects = [
       "This full-stack application lets you store information about customers to help you track the status of every customer relationshipand this will store and edit customer details, as well as keep notes about them",
     frontendcode: "https://github.com/Sivaramanraja98/WEBCODE-CRM-FRONTEND.git",
     backendcode: "https://github.com/Sivaramanraja98/WEBCODE-CRM-BACKEND.git",
-    applink: "https://amazing-mousse-4d5cd0.netlify.app/",
+    applink: "https://wondrous-tulumba-ff080c.netlify.app/",
     img: imgcrm,
   },
   {
