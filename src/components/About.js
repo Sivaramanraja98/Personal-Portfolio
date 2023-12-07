@@ -33,7 +33,7 @@ const About = () => {
               <li>Education : B.Tech - Mechanical Engineering</li>
               <li>College : Karunya Institute of Technology And Sciences, CBE </li>
               <li>Batch : 2015 - 2019</li>
-              <li>Location : Tenkai, Tamilnadu</li>
+              <li>Location : Tenkasi, Tamilnadu</li>
             </ul>
           </Col>
         </Row>
