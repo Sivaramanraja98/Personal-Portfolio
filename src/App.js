@@ -7,6 +7,7 @@ import Contact from "./components/Contact.js";
 import Footer from "./components/Footer.js";
 import About from "./components/About.js";
 
+
 const App = () => {
   return (
     <div>
@@ -16,7 +17,9 @@ const App = () => {
       <Skills />
       <Project />
       <Contact />
+      
       <Footer />
+
     </div>
   );
 };

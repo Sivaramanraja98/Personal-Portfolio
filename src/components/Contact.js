@@ -1,72 +1,35 @@
 import React from "react";
-import "./skill.css";
-import { AiFillGithub, AiFillMail, AiFillLinkedin } from "react-icons/ai";
-import { BsTelephoneFill } from "react-icons/bs";
-import { HiOutlineMail } from "react-icons/hi";
-import { ImLocation } from "react-icons/im";
-import { Col, Button, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import "./style.css";
 
 const Contact = () => {
   return (
-    <div className="p-5" id="contact">
-      <div className="Container borde1">
-        <div className="Title">Contact Me</div>
-        <Row className="justify-content-center flex d-flex g-20">
-          <Col>
-            <a
-              href="https://github.com/Sivaramanraja98"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Button className="btn btn-primary gitbtn">
-                <AiFillGithub size={30} />
-              </Button>
-            </a>
-          </Col>
-          <Col className="justify-content-center g-20">
-            <a
-              href="https://www.linkedin.com/in/sivaraman2298"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Button className="btn btn-primary gitbtn">
-                <AiFillLinkedin size={30} />
-              </Button>
-            </a>
-          </Col>
-          <Col className="justify-content-center g-20">
-            <a
-              href="mailto:Sivaram1194@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Button className="btn btn-primary gitbtn">
-                <AiFillMail size={30} />
-              </Button>
-            </a>
+    <div className="contact-section bg-gradient" id="contact">
+      <Container>
+      <div className="contact-container">
+        <h2 className="section-title funky-text text-center mb-5">Get in Touch</h2>
+        <Row className="justify-content-center text-center">
+          <Col md={6}>
+            <p><span className="contact-icon">📞</span> <span className="cfunky-text">+91 - 9791928453</span></p>
+            <p><span className="contact-icon">✉️</span> <span className="cfunky-text">sivaram1194@gmail.com</span></p>
+            <p><span className="contact-icon">📍</span> <span className="cfunky-text">TamilNadu, India</span></p>
           </Col>
         </Row>
-        <Row
-          className="justify-content-center g-20"
-          style={{ margin: "15px", fontSize: "20px" }}
-        >
-          <Col md={12} style={{ textAlign: "center", color:"cornsilk" }}>
-            <p>
-              <BsTelephoneFill />  +91 - 9791928453
-            </p>
-          </Col>
-          <Col md={12} style={{ textAlign: "center", color:"cornsilk" }}>
-            <p>
-              <HiOutlineMail />  sivaram1194@gmail.com
-            </p>
-          </Col>
-          <Col md={12} style={{ textAlign: "center", color:"cornsilk" }}>
-            <p>
-              <ImLocation />  TamilNadu ,India
-            </p>
+        <Row className="justify-content-center mt-5">
+          <Col md={6} className="text-center">
+            <div className="social-links">
+              <a href="https://github.com/Sivaramanraja98" target="_blank" rel="noopener noreferrer" className="contact-icon">
+                <AiFillGithub size={40} />
+              </a>
+              <a href="https://www.linkedin.com/in/sivaraman2298" target="_blank" rel="noopener noreferrer" className="contact-icon">
+                <AiFillLinkedin size={40} />
+              </a>
+            </div>
           </Col>
         </Row>
-      </div>
+        </div>
+      </Container>
     </div>
   );
 };

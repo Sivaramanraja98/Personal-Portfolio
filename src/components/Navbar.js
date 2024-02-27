@@ -1,32 +1,19 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import "../App.css";
 
 const Navibar = () => {
   return (
-    <Navbar expand="lg" className="fixed-top nav" style={{ backgroundColor: "black" }}>
+    <Navbar expand="lg" bg="dark" variant="dark" fixed="top">
       <Container>
-        <Navbar.Brand className="header" href="#home">
-          MERN STACK DEVELOPER
-        </Navbar.Brand>
-        <Navbar.Toggle className="toggler" aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto left">
-            <Nav.Link href="#home">
-              <b className="nank">Home</b>
-            </Nav.Link>
-            <Nav.Link href="#about">
-              <b className="nank">About</b>
-            </Nav.Link>
-            <Nav.Link href="#skills">
-              <b className="nank">Skills</b>
-            </Nav.Link>
-            <Nav.Link href="#project">
-              <b className="nank">Projects</b>
-            </Nav.Link>
-            <Nav.Link href="#contact">
-              <b className="nank">Contact</b>
-            </Nav.Link>
+        <Navbar.Brand href="#home" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700 }}>MERN STACK DEVELOPER</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+          <Nav>
+            <Nav.Link href="#home" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 500 }}>Home</Nav.Link>
+            <Nav.Link href="#about" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 500 }}>About</Nav.Link>
+            <Nav.Link href="#skills" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 500 }}>Skills</Nav.Link>
+            <Nav.Link href="#project" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 500 }}>Projects</Nav.Link>
+            <Nav.Link href="#contact" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 500 }}>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

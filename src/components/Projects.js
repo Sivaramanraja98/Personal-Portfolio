@@ -1,61 +1,39 @@
 import React from "react";
-import "./skill.css";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { projects } from "../components/Assets/ProjectList";
+import "./style.css"; 
 
-const Project = () => {
+const Projects = () => {
   return (
-    <div className="p-5" id="project">
-      <div className="Container borde1">
-        <div className="Wrapper">
-          <div className="Title">Projects</div>
-          <div className="SkillsContainer">
-            {projects.map((project) => (
-              <div className="Skill justify-content-center">
-                <h2 className="SkillTitle">{project.name}</h2>
-                <img
-                  src={project.img}
-                  alt="screenshot"
-                  style={{ width: "100%", height: "200px" }}
-                />
-                <details className="SkillList justify-content-center">
-                  <summary className="Click">
-                    Click here for Description
-                  </summary>
-                  <p className="desc">{project.description}</p>
-                </details>
-                <div className ="butn-cont">
-                  <a
-                    href={project.applink}
-                    className="butn"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Demo
-                  </a>
-                  <a
-                    href={project.frontendcode}
-                    className="butn"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    FE Code
-                  </a>
-                  <a
-                    href={project.backendcode}
-                    className="butn"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    BE Code
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
+    <div className="projects-section">
+      <Container>
+      <div className="project-container">
+        <h2 className="section-title">Projects</h2>
+        <Row xs={1} md={2} lg={3} className="g-4">
+          {projects.map((project, index) => (
+            <Col key={index}>
+              <Card className={`project-card card-${index + 1}`}>
+                <Card.Img variant="top" src={project.img} alt="screenshot" />
+                <Card.Body>
+                  <Card.Title>{project.name}</Card.Title>
+                  <details>
+                    <summary>Description</summary>
+                    <Card.Text>{project.description}</Card.Text>
+                  </details>
+                  <div className="buttons">
+                    <Button href={project.applink} variant="primary" target="_blank" rel="noreferrer">Demo</Button>
+                    <Button href={project.frontendcode} variant="secondary" target="_blank" rel="noreferrer">FE Code</Button>
+                    <Button href={project.backendcode} variant="secondary" target="_blank" rel="noreferrer">BE Code</Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };
 
-export default Project;
+export default Projects;
