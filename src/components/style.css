@@ -1,4 +1,27 @@
+/* Header.css */
 
+.funky-navbar {
+  background-color: #4e6479; 
+}
+
+/* Navbar links */
+.funky-nav-item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: white; 
+  padding: 0.5rem 1rem; 
+  border-radius: 0.25rem; 
+  margin-left: 0.5rem; 
+  transition: background-color 0.3s ease; 
+}
+
+.funky-nav-item{
+  background-color: whitesmoke;
+  color: #000000;
+}
+
+
+/*Home.css*/
 .home-section {
   background-color: #ff6b6b; 
   padding: 100px 0;

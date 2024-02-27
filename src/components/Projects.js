@@ -5,7 +5,7 @@ import "./style.css";
 
 const Projects = () => {
   return (
-    <div className="projects-section">
+    <div className="projects-section" id="project">
       <Container>
       <div className="project-container">
         <h2 className="section-title">Projects</h2>
