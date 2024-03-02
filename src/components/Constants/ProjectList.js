@@ -222,6 +222,6 @@ export let projects = [
     frontendcode: "https://github.com/Sivaramanraja98/React-BMI.git",
     applink: "",
     img: imgBMI,
-    techFrontend: ["React.js", "React-Bootstrap","Bootstrap", "UseState"],
+    techFrontend: ["React.js", "React-Bootstrap","Bootstrap","CSS", "UseState","User Input Validation"],
   },
 ];
