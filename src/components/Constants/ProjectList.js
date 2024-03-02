@@ -218,7 +218,7 @@ export let projects = [
     Type: "React",
     name: "BMI-CALCULATOR",
     description:
-      "",
+      "The Interactive BMI Calculator is a sleek, user-friendly web application designed to provide users with a quick and accurate assessment of their Body Mass Index (BMI). Leveraging the latest in web technologies, including ReactJS and CSS3, this application offers a responsive design that adapts seamlessly across devices, ensuring accessibility and a great user experience.",
     frontendcode: "https://github.com/Sivaramanraja98/React-BMI.git",
     applink: "",
     img: imgBMI,
