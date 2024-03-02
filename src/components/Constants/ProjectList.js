@@ -220,7 +220,7 @@ export let projects = [
     description:
       "The Interactive BMI Calculator is a sleek, user-friendly web application designed to provide users with a quick and accurate assessment of their Body Mass Index (BMI). Leveraging the latest in web technologies, including ReactJS and CSS3, this application offers a responsive design that adapts seamlessly across devices, ensuring accessibility and a great user experience.",
     frontendcode: "https://github.com/Sivaramanraja98/React-BMI.git",
-    applink: "",
+    applink: "https://reactbmi2298.netlify.app/",
     img: imgBMI,
     techFrontend: ["React.js", "React-Bootstrap","Bootstrap","CSS", "UseState","User Input Validation"],
   },
