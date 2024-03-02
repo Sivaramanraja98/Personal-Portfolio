@@ -8,6 +8,7 @@ import imgwea from "../Assets/weather.PNG";
 import imgpc from "../Assets/pricecard.PNG";
 import imgcal from "../Assets/calc.PNG";
 import imgpag from "../Assets/page.PNG";
+import imgBMI from "../Assets/BMI"
 
 export let projects = [
   {
@@ -211,5 +212,16 @@ export let projects = [
       "DOM manipulation",
       "XMLHttpRequest (XHR)",
     ],
+  },
+  {
+    id: 11,
+    Type: "React",
+    name: "BMI-CALCULATOR",
+    description:
+      "",
+    frontendcode: "https://github.com/Sivaramanraja98/React-BMI.git",
+    applink: "",
+    img: imgBMI,
+    techFrontend: ["React.js", "React-Bootstrap","Bootstrap", "UseState"],
   },
 ];
