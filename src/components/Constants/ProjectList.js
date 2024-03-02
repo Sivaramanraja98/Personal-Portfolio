@@ -8,7 +8,7 @@ import imgwea from "../Assets/weather.PNG";
 import imgpc from "../Assets/pricecard.PNG";
 import imgcal from "../Assets/calc.PNG";
 import imgpag from "../Assets/page.PNG";
-import imgBMI from "../Assets/BMI"
+import imgBMI from "../Assets/BMI.jpg"
 
 export let projects = [
   {
